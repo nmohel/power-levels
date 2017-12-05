@@ -1,0 +1,21 @@
+<fieldset class="cooloutline">
+  <legend class="cooloutline">PowerComponent</legend>
+  <h2 style="display:inline-block">
+    Initial Power Level:
+  </h2>
+  <form>
+      <input type="number" name="initPow" [(ngModel)]="initPow" min="1" max="100">
+      <button type="submit" (click)="update()">Calculate Powers</button>
+  </form>
+
+  <div>
+    <app-child name="Human" multiplier="1" [power]="pow"></app-child>
+    <app-child name="Saiyan" multiplier="10" [power]="pow"></app-child>
+    <app-child name="SuperSaiyan" multiplier="90" [power]="pow"></app-child>
+  </div>
+  <div>
+    <app-child name="SuperSaiyanTwo" multiplier="150" [power]="pow"></app-child>
+    <app-child name="SuperSaiyanThree" multiplier="250" [power]="pow"></app-child>
+    <app-child name="SuperSaiyanFour" multiplier="500" [power]="pow"></app-child>
+  </div>
+</fieldset>

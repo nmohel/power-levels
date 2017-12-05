@@ -1,0 +1,7 @@
+<fieldset class="cooloutline">
+  <legend class="cooloutline">{{name}}Component</legend>
+  <p>Power level: {{childPower}}</p>
+  <p *ngIf="childPower > 9000 && childPower <= 20000">Over 9000!</p>
+  <p *ngIf="childPower > 20000 && childPower != 50000">Superlative!</p>
+  <p *ngIf="childPower == 50000">The One</p>
+</fieldset>
